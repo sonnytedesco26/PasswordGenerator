@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./assets/js/passGen.js"></script>
+    <div class="pssbox">
+        <h2>Random Password Generator</h2>
+        <input type="text" name="" placeholder="Password" id="password" readonly>
+        <table>
+           <!-- 
+            <th>
+                <div id="button" class="CopyButton" onclick="copy()">
+                    Copy
+                </div>
+            </th>
+            -->
+            <th>
+                <input type="number" name="pssLength" placeholder="Length (8-128 char)" id="pssLength" min="8" max="128">
+            </th>
+            <th>
+                <input type="checkbox" name="lowercase" id="lowercase">
+                <label for="lowercase">Include lowercase?</label> 
+            </th>
+            <th>
+                <input type="checkbox" name="uppercase" id="uppercase">
+                <label for="uppercase">Include uppercase?</label> 
+            </th>
+            <th>
+                <input type="checkbox" name="numeric" id="numeric">
+                <label for="numeric">Include numeric?</label> 
+            </th>
+            <th>
+                <input type="checkbox" name="special" id="special">
+                <label for="special">Include special?</label> 
+            </th>
+        </table>
+        <div id="button" class="GenerateButton" onclick="generate()">
+            Generate Password
+        </div>
+    </div>
+</body>
+</html>
