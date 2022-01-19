@@ -16,9 +16,6 @@ function generate() {
     var specialSet = document.getElementById("special").checked;
     var passwordLength = document.getElementById("pssLength").value;  
     var chars = "";
-    if(chars.length === 0){
-        window.alert("Must specify password length!")
-    }
     if(lowercaseSet){
         chars += "abcdefghijklmnopqrstuvwxyz";
     }
@@ -30,6 +27,9 @@ function generate() {
     }
     if(specialSet){
         chars += "!@#$%^&*()"
+    }
+    if(chars === ""){
+        window.alert("Must which characters to include")
     }
     for (var i = 0; i <= passwordLength; i++) {
         var randomNumber = Math.floor(Math.random() * chars.length);
