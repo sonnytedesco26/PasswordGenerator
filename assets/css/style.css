@@ -6,7 +6,7 @@
     }
    
 body {
-    background-color: #e7bf0e;
+    background-color: #5a001f;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -41,9 +41,21 @@ input {
         margin-bottom: 40px;
         text-align: center;
         font-size: 30px;
-        color: #261394;
+        color: #000000;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+th{
+    padding: 10px;
+}
+
+.numLength{
+    width: 258px;
+}
 
 #button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -66,4 +78,13 @@ input {
         color:purple;
         background-color: salmon;
     }
+
+@media screen and (max-width: 980px) {
+    *{
+        display:block;
+    }
     
+    title{
+        display:table-column;
+    }
+}    

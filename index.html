@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Password Generator</title>
 </head>
 <body>
     <script src="./assets/js/passGen.js"></script>
@@ -21,23 +21,23 @@
             </th>
             -->
             <th>
-                <input type="number" name="pssLength" placeholder="Length (8-128 char)" id="pssLength" min="8" max="128">
+                <input class="numLength" type="number" name="pssLength" placeholder="Length (8-128 char)" id="pssLength" min="8" max="128">
             </th>
             <th>
                 <input type="checkbox" name="lowercase" id="lowercase">
-                <label for="lowercase">Include lowercase?</label> 
+                <label for="lowercase">Lowercase</label> 
             </th>
             <th>
                 <input type="checkbox" name="uppercase" id="uppercase">
-                <label for="uppercase">Include uppercase?</label> 
+                <label for="uppercase">Uppercase</label> 
             </th>
             <th>
                 <input type="checkbox" name="numeric" id="numeric">
-                <label for="numeric">Include numeric?</label> 
+                <label for="numeric">Numeric</label> 
             </th>
             <th>
                 <input type="checkbox" name="special" id="special">
-                <label for="special">Include special?</label> 
+                <label for="special">Special Char</label> 
             </th>
         </table>
         <div id="button" class="GenerateButton" onclick="generate()">
